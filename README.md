@@ -7,7 +7,7 @@
 1. Terraform version `1.1.4` or newer.
 2. Terragrunt version `v0.36.0` or newer.
 3. Make your GCP Service accounts get credentials (Assign Role `Owner or Editor`)
-4. Make `KEYS` then Download `credentials.json` into live >> {stage}
+4. Make `KEYS` then Download `credentials.json` and place into folder `live` >> `{stage}` (e.g. DIR live/staging/)
 5. Fill in your into `live` >> `{stage}` >> `{module}` >> `terragrunt.hcl` as you wish
 
 ## Deploying a single module
