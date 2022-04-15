@@ -1,0 +1,13 @@
+.DS_Store
+
+live/staging/credentials.json
+live/staging/gcp-gke/.terragrunt-cache/
+live/staging/gcp-gke/.terraform.lock.hcl
+live/staging/gcp-sql/.terragrunt-cache/
+live/staging/gcp-sql/.terraform.lock.hcl
+
+live/production/credentials.json
+live/production/gcp-gke/.terragrunt-cache/
+live/production/gcp-gke/.terraform.lock.hcl
+live/production/gcp-sql/.terragrunt-cache/
+live/production/gcp-sql/.terraform.lock.hcl
