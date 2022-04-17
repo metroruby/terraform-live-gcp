@@ -36,7 +36,7 @@ module "gcp_network" {
   subnets = [
     {
       subnet_name   = local.subnet
-      subnet_ip     = "10.10.0.0/16"
+      subnet_ip     = var.vpc_cidr_main
       subnet_region = var.region
     },
   ]
@@ -45,11 +45,11 @@ module "gcp_network" {
     "${local.subnet}" = [
       {
         range_name    = local.ip_range_pods
-        ip_cidr_range = "10.20.0.0/16"
+        ip_cidr_range = var.vpc_secondary_cidr_pods
       },
       {
         range_name    = local.ip_range_services
-        ip_cidr_range = "10.30.0.0/16"
+        ip_cidr_range = var.vpc_secondary_cidr_services
       },
     ]
   }

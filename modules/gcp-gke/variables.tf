@@ -12,6 +12,21 @@ variable "region" {
   type        = string
 }
 
+variable "vpc_cidr_main" {
+  description = "The IP main to CIDR"
+  type        = string
+}
+
+variable "vpc_secondary_cidr_pods" {
+  description = "The IP secondary pods to CIDR"
+  type        = string
+}
+
+variable "vpc_secondary_cidr_services" {
+  description = "The IP secondary services to CIDR"
+  type        = string
+}
+
 variable "zones" {
   description = "The zones to host the cluster in"
   type        = list(string)

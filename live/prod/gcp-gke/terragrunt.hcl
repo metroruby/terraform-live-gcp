@@ -17,12 +17,12 @@ inputs = {
   cluster_name = join("-", [local.common.org, local.env.env])
   region       = local.env.region
   zones        = ["asia-southeast1-b"]
-  vpc_cidr_main = "10.10.0.0/16"
-  vpc_secondary_cidr_pods = "10.20.0.0/16"
-  vpc_secondary_cidr_services = "10.30.0.0/16"
+  vpc_cidr_main = "10.110.0.0/16"
+  vpc_secondary_cidr_pods = "10.120.0.0/16"
+  vpc_secondary_cidr_services = "10.130.0.0/16"
 
   machine_type = "e2-medium"
-  max_nodes    = 2
+  max_nodes    = 6
 
   disk_size = 30
 
